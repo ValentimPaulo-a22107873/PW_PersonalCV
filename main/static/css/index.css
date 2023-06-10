@@ -1,0 +1,83 @@
+.body {
+    width: 100%;
+    height: 100vh;
+
+    z-index: 50;
+    
+
+    display: flex;
+    justify-content: center;
+}
+
+/*----------------------------------*/
+.body > .image {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7%;
+}
+
+.body > .image > .picture {
+    width: 450px;
+    height: 450px;
+    margin-top: 13%;
+
+    background-color: white;
+    border-radius: 250px;
+}
+
+.body > .image > p {
+    margin-top: 2%;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.body > .image > .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+} 
+
+.body > .image > .social > a {
+    padding-left: 7%;
+    padding-right: 7%;
+} 
+
+.body > .image > .social > a:hover {
+    text-shadow: 1px 1px 30px #ffffffbb;
+} 
+/* This part is for the right side of the hero page, wich contains the image */
+
+
+/*----------------------------------*/
+.body > .text {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+}
+
+.body > .text > .intro {
+    padding-top: 23%;
+    text-align: right;
+
+    font-size: 45px;
+}
+
+.body > .text > .intro > .p1 {
+    margin-right: 20%;
+    margin-bottom: 2%;
+}
+
+.body > .text > .intro > .p2 {
+    margin-right: 10%;
+    margin-bottom: 1%;
+    margin-top: 0;
+}
+
+.body > .text > .intro > .p3 {
+    margin: 0;
+}
+

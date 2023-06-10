@@ -1,0 +1,110 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/playground.css' %}">
+<script src="{% static 'js/calculator.js' %}"></script>
+<script src="{% static 'js/playground.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="body">
+
+    <div class="calculator_space">
+
+        <div class="calculator">
+
+            <div class="screen">
+                <p id="result"></p>
+            </div>
+
+            <section class="buttons">
+
+                <div class="calc_button_row">
+                    <button class="calc_button double" onclick="clr()">C</button>
+                    <button class="calc_button" onclick="del()">←</button>
+                    <button class="calc_button" onclick="insert('/')">÷</button>
+                </div>
+
+                <div class="calc_button_row">
+                    <button class="calc_button" onclick="insert('7')">7</button>
+                    <button class="calc_button" onclick="insert('8')">8</button>
+                    <button class="calc_button" onclick="insert('9')">9</button>
+                    <button class="calc_button" onclick="insert('*')">x</button>
+                </div>
+
+                <div class="calc_button_row">
+                    <button class="calc_button" onclick="insert('4')">4</button>
+                    <button class="calc_button" onclick="insert('5')">5</button>
+                    <button class="calc_button" onclick="insert('6')">6</button>
+                    <button class="calc_button" onclick="insert('-')">-</button>
+                </div>
+
+                <div class="calc_button_row">
+                    <button class="calc_button" onclick="insert('1')">1</button>
+                    <button class="calc_button" onclick="insert('2')">2</button>
+                    <button class="calc_button" onclick="insert('3')">3</button>
+                    <button class="calc_button" onclick="insert('+')">+</button>
+                </div>
+
+                <div class="calc_button_row">
+                    <button class="calc_button double" onclick="insert('0')">0</button>
+                    <button class="calc_button" onclick="insert('.')">.</button>
+                    <button class="calc_button" onclick="operation()">=</button>
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+    <div class="second_space">
+
+        <div class="date"></div>
+
+        <div class="image_text">
+
+            <div class="text">
+                <p>What do you think when you see this little guy!</p>
+                <div class="input">
+                    <input type="text" id="image_text"> <button class="image_button" style="width: 70px;">send</button>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="{% static 'images/squirrel.jpg' %}" alt="">
+                <p id="text_image"></p>
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+    <div class="third_space">
+
+        <div class="alert">
+            <div class="troll" onmouseover="troll()" onmouseout="troll2()" >Não passes aqui o rato</div>
+        </div>
+
+        <div class="animations">
+            <div class="clip"></div>
+        </div>
+
+        <div class="name">
+            <p>Insert your name </p> 
+            <input type="text" id="name_text">
+            <button class="text_button" style="width: 70px;">send</button>
+        </div>
+
+        <p id="hidden_text1"></p>
+        <p id="hidden_text2"></p>
+        <p id="hidden_text3"></p>
+
+
+    </div>
+
+</div>
+{% endblock %}

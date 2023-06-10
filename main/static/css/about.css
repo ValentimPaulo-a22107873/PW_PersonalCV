@@ -1,0 +1,190 @@
+/* --------------------------- ABOUT ME PAGE ----------------------------- */
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*----------------------------------*/
+.about > .body {
+    width: 100%;
+    height: 84vh;
+
+    padding-top: 7%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.about > .body > .empty1 {
+    width: 15%;
+    height: 83vh;
+}
+
+.about > .body > .empty2{
+    width: 15%;
+    height: 83vh;
+}
+
+
+/*----------------------------------*/
+.about > .body > .info {
+    height: 84vh;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about > .body > .info > p {
+    font-size: 20px;
+    
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+
+    display: flex;
+}
+
+.about > .body > .info > .board {
+    width: 800px;
+    height: 560px;
+
+    padding: 2%;
+
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    border-radius: 1%;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_welcome {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_welcome > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+    
+    font-weight: bold;
+}
+
+.about > .body > .info > .board > .text_education {
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_education > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_skills {
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_skills > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_hobbies {
+    padding: 2%;
+    display: none;
+    flex-direction: column;
+
+    font-size: 17px;
+}
+
+.about > .body > .info > .board > .text_hobbies > h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+
+/* This part is for the box and its content inside */
+
+/*----------------------------------*/
+.about > .body > .info > .board > .button_previous {
+    font-size: 40px;
+    color: var(--secondary-letter-color);
+    padding-right: 10px;
+    padding-bottom: 8px;
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 200%;
+
+    left: 494px;
+    top: 500px;
+
+    background-color: var(--background-color);
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+
+    display: none;
+}
+
+.about > .body > .info > .board > .button_previous:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .button_next {
+    font-size: 40px;
+    color: var(--secondary-letter-color);
+    padding-left: 10px;
+    padding-bottom: 8px;
+
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 200%;
+
+    left: 1349px;
+    top: 500px;
+
+    background-color: var(--background-color);
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .button_next:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px var(--secondary-letter-color);
+}
+/* This part is for the buttons and their properties */
+
+.about > .body > .empty2 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+} 
+/* --------------------------- ABOUT ME PAGE ----------------------------- */

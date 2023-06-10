@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="body">
+
+    <div class="text">
+
+        <div class="intro">
+            <p class="p1">Hi, my name is </p>
+            <p class="p2"><span style="font-weight: bold; font-size: 90px;">Valentim Paulo</span></p>
+            <p class="p3">and I'm a <span style="color: rgb(121, 119, 119);">Software Engineer</span></p>
+        </div>
+        
+    </div>
+
+    <div class="image">
+        
+        <img src="{% static 'images/Black_question_mark.png' %}" alt="" class="picture">
+
+        <p>Contact me:</p>
+
+        <div class="social">
+            <a href="https://www.instagram.com/valentim_spaulo/"><i class="fa fa-instagram" style="color: #797777; font-size: 45px;"></i></a>
+            <a href="https://twitter.com/Valentim_spaulo"><i class="fa fa-twitter" style="color: #797777; font-size: 45px;"></i></a>
+            <a href="https://www.linkedin.com/in/valentim-paulo-360241234/"><i class="fa fa-linkedin" style="color: #797777; font-size: 45px;"></i></a>
+            <a href="https://github.com/ValentimPaulo-a22107873"><i class="fa fa-github" style="color: #797777; font-size: 45px;"></i></a>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

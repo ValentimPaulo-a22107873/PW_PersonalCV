@@ -1,0 +1,106 @@
+:root {
+    --dark-background-color : rgb(136, 139, 141);
+    --dark-main-letter-color : black;
+    --dark-secondary-letter-color : lime;
+    /* For the dark mode */
+
+    --background-color : rgb(15, 15, 17);
+    --main-letter-color : white;
+    --secondary-letter-color : rgb(121, 119, 119);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--main-letter-color);
+
+    margin: 0%;
+
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-main-letter-color);
+} 
+
+/* ------------------------------- GLOBAL ------------------------------------- */
+
+
+
+/* ------------------------------- HEADER ------------------------------------- */
+header {
+    width: 100%;
+    height: 11vh;
+    /* For its ocupation in the page */
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px;
+    border-style: hidden hidden solid hidden;
+    border-color: white;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For the positioning */
+
+    padding-left: 7%;
+}
+
+header > nav > a {
+    padding: 30px;
+    /* For the positioning */
+
+    text-decoration: none;
+    color: var(--secondary-letter-color);
+    font-size: 17px;
+}
+
+header > nav > a:hover {
+    text-shadow: 1px 1px 30px #ffffffcb;
+}
+
+header > .dark_mode_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* For the positioning */
+
+    padding-right: 6%;
+}
+
+header > .dark_mode_button > button:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------- HEADER ------------------------------------- */
+
+
+
+/* ------------------------------- FOOTER ------------------------------------- */
+
+footer {
+    height: 8vh;
+    width: 100%;
+
+    border: 1px;
+    border-style: solid hidden hidden hidden;
+    border-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------- FOOTER ------------------------------------- */

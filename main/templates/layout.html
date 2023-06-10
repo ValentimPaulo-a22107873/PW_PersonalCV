@@ -1,0 +1,63 @@
+{% load static %}
+
+<html lang="eng">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Personal CV</title>
+        <meta name="author" content="Valentim Paulo">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/74ea05c650.js" crossorigin="anonymous"></script>
+    
+        <script src="{% static 'js/dark_mode.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/geral.css' %}">
+        
+        {% block head %}
+		{% endblock %}
+    </head>
+
+    <body>
+
+        <header>
+
+            <div></div>
+
+            <nav>
+                <a href="{% url 'main:index' %}">Home</a>
+                <a href="{% url 'main:about' %}">About me</a>
+                <a href="{% url 'main:projects' %}">Projects</a>
+                <a href="">Web Programming</a>
+                <a href="">Website Info</a>
+                <a href="{% url 'main:playground' %}">PlayGround</a>
+                <a href="">Blog</a>
+                </ul>
+            </nav>
+
+            <div class="dark_mode_button" onclick="toggleDarkMode()">
+                <p>Claro</p>
+            </div>
+
+        </header>
+
+        {% block body %}
+		{% endblock %}
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>

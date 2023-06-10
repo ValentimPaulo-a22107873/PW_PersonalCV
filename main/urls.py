@@ -16,6 +16,11 @@ Including another URLconf
 from django.urls import path
 from . import views
 
+app_name = 'main'
+
 urlpatterns = [
-    path('index/', views.index_view),
+    path('', views.index, name="index"),
+    path('playground/', views.playground, name="playground"),
+    path('about/', views.about, name="about"),
+    path('projects/', views.projects, name="projects"),
 ]

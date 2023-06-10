@@ -1,0 +1,43 @@
+.empty{
+    height: 20vh;
+}
+
+#text {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img {
+    min-height: 700px;
+    background-color: white;
+
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#text > h1 {
+    color: var(--secondary-letter-color);
+}
+
+#text > p {
+    width: 70%;
+}
+
+.deisi_jungle {
+    background-image: url(main/static/css/images/Deisi_Jungle.png);
+}
+
+.deisi_sweeper {
+    background-image: url(main/static/css/images/Deisi_Sweeper.png);
+}
+
+.constipes {
+    background-image: url(main/static/css/images/Não\ te\ constipes.png);
+}
