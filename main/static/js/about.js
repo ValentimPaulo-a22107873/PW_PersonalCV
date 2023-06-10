@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if(counter === 3){
             document.querySelector('.text_skills').style.display = 'none';
             document.querySelector('.text_hobbies').style.display = 'flex';
+        }
+        if(counter === 4){
+            document.querySelector('.text_hobbies').style.display = 'none';
+            document.querySelector('.text_course').style.display = 'flex';
             buttonNext.style.display = 'none';
         }
         counter++;
@@ -36,6 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if(counter === 4){
             document.querySelector('.text_skills').style.display = 'flex';
             document.querySelector('.text_hobbies').style.display = 'none';
+        }
+        if(counter === 5){
+            document.querySelector('.text_hobbies').style.display = 'flex';
+            document.querySelector('.text_course').style.display = 'none';
             buttonNext.style.display = 'block';
         }
         counter--;
