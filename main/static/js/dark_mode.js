@@ -20,9 +20,8 @@ function toggleDarkMode() {
 
 function applyDarkMode() {
     const buttonDark = document.querySelector('.dark_mode_button');
-    var element = document.body;
-
-    element.classList.add('dark-mode');
+    
+    document.documentElement.classList.add('dark');
 
     buttonDark.innerHTML = 'Escuro';
     buttonDark.style.cursor = 'pointer';
@@ -32,9 +31,8 @@ function applyDarkMode() {
 
 function applyLightMode() {
     const buttonDark = document.querySelector('.dark_mode_button');
-    var element = document.body;
 
-    element.classList.remove('dark-mode');
+    document.documentElement.classList.remove('dark');
 
     buttonDark.innerHTML = 'Claro';
     buttonDark.style.cursor = 'pointer';

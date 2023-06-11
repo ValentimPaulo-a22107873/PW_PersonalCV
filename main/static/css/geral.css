@@ -1,12 +1,14 @@
 :root {
-    --dark-background-color : rgb(136, 139, 141);
+    --background-color : rgb(22, 22, 26);
+    --main-letter-color : white;
+    --secondary-letter-color : rgb(129, 123, 123);
+    --hover-color : #ffffffcb;
+}
+
+:root.dark {
+    --dark-background-color : rgb(233, 236, 238);
     --dark-main-letter-color : black;
     --dark-secondary-letter-color : lime;
-    /* For the dark mode */
-
-    --background-color : rgb(15, 15, 17);
-    --main-letter-color : white;
-    --secondary-letter-color : rgb(121, 119, 119);
 }
 
 * {
@@ -24,11 +26,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.dark-mode {
-    background-color: var(--dark-background-color);
-    color: var(--dark-main-letter-color);
-} 
-
 /* ------------------------------- GLOBAL ------------------------------------- */
 
 
@@ -44,9 +41,13 @@ header {
     display: flex;
     justify-content: space-between;
 
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     border: 2px;
     border-style: hidden hidden solid hidden;
-    border-color: white;
+    border-color: var(--main-letter-color);
 }
 
 header > nav {
@@ -64,11 +65,12 @@ header > nav > a {
 
     text-decoration: none;
     color: var(--secondary-letter-color);
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 header > nav > a:hover {
-    text-shadow: 1px 1px 30px #ffffffcb;
+    text-shadow: 1px 1px 30px var(--hover-color);
 }
 
 header > .dark_mode_button {
@@ -96,11 +98,64 @@ footer {
 
     border: 1px;
     border-style: solid hidden hidden hidden;
-    border-color: white;
+    border-color: var(--main-letter-color);
 
     display: flex;
+    justify-content: space-between;
+}
+
+footer > .info {
+    width: 20%;
+    padding-left: 7%;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer > .email {
+    width: 20%;
+    padding-right: 7%;
+    padding-top: 15px;
+}
+
+footer > .email > .contact-form > input {
+    font-weight: bold;
+    min-width: 120px;
+    width: 25%;
+    font-size: 15px;
+    color: var(--main-letter-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    border: 2px;
+    border-color: var(--secondary-letter-color);
+    border-style: solid;
+    border-radius: 150px;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+    padding: 7%;
+}
+
+footer > .email > .contact-form > input:hover {
+    text-shadow: 1px 1px 30px var(--hover-color);
+}
+
+
+
+footer > div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+footer > div > .info1 {
+    font-size: 18px;
+    color: var(--secondary-letter-color);
+    font-weight: bold; 
+}
+
+footer > div > .info2{
+    font-size: 12px;
 }
 
 /* ------------------------------- FOOTER ------------------------------------- */

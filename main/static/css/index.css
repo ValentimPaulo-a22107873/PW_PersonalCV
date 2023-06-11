@@ -23,7 +23,7 @@
     height: 450px;
     margin-top: 13%;
 
-    background-color: white;
+    background-color: var(--main-letter-color);
     border-radius: 250px;
 }
 
@@ -42,10 +42,13 @@
 .body > .image > .social > a {
     padding-left: 7%;
     padding-right: 7%;
-} 
+
+    font-size: 45px;
+    color: var(--secondary-letter-color);
+}       
 
 .body > .image > .social > a:hover {
-    text-shadow: 1px 1px 30px #ffffffbb;
+    text-shadow: 1px 1px 30px var(--hover-color);
 } 
 /* This part is for the right side of the hero page, wich contains the image */
 
@@ -80,4 +83,10 @@
 .body > .text > .intro > .p3 {
     margin: 0;
 }
+
+.body > .text > .intro > .p3 > span {
+    color: var(--secondary-letter-color);
+}
+
+
 

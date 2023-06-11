@@ -30,7 +30,6 @@
                 <a href="{% url 'main:about' %}">About me</a>
                 <a href="{% url 'main:projects' %}">Projects</a>
                 <a href="">Web Programming</a>
-                <a href="">Website Info</a>
                 <a href="{% url 'main:playground' %}">PlayGround</a>
                 <a href="">Blog</a>
                 </ul>
@@ -46,7 +45,20 @@
 		{% endblock %}
 
         <footer>
+            <div class="info">Credits: Valentim Paulo</div>
 
+            <div>
+                <span class="info1">This website was made using Html, CSS, JavaScript, Python and Django</span>
+                <p class="info2">Universidade Lusófona | Engenharia Informática | @2023</p>
+            </div>
+
+            <div class="email">
+
+                <form action="mailto:valentimspaulo@gmail.com" class="contact-form">
+                    <input type="submit" value="Send Email" required>
+                </form>
+
+            </div>
         </footer>
 
     </body>

@@ -66,7 +66,7 @@
     display: flex;
     flex-direction: column;
 
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .about > .body > .info > .board > .text_welcome > h1 {
@@ -82,12 +82,16 @@
     display: none;
     flex-direction: column;
 
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .about > .body > .info > .board > .text_education > h1 {
     display: flex;
     justify-content: center;
+    color: var(--secondary-letter-color);
+}
+
+.about > .body > .info > .board > .text_education > ul > li > a {
     color: var(--secondary-letter-color);
 }
 
@@ -202,15 +206,15 @@
 
 /*----------------------------------*/
 .about > .body > .info > .board > .button_previous {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--secondary-letter-color);
     padding-right: 10px;
     padding-bottom: 8px;
 
     position: absolute;
 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 
     border-radius: 200%;
 
@@ -232,15 +236,15 @@
 }
 
 .about > .body > .info > .board > .button_next {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--secondary-letter-color);
     padding-left: 10px;
     padding-bottom: 8px;
 
     position: absolute;
 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 
     border-radius: 200%;
 
