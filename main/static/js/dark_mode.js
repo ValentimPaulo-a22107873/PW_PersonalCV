@@ -14,7 +14,6 @@ function setLightMode() {
 }
 
 function toggleDarkMode() {
-    console.log("xxxxxxxx")
     darkMode ? setLightMode() : setDarkMode();
 }
 
@@ -24,9 +23,7 @@ function applyDarkMode() {
     document.documentElement.classList.add('dark');
 
     buttonDark.innerHTML = 'Escuro';
-    buttonDark.style.cursor = 'pointer';
-    counter = 0;
-        
+    buttonDark.style.cursor = 'pointer';   
 }
 
 function applyLightMode() {
@@ -36,7 +33,6 @@ function applyLightMode() {
 
     buttonDark.innerHTML = 'Claro';
     buttonDark.style.cursor = 'pointer';
-    counter = 1;
 }
 
 function getLocalPreference() {

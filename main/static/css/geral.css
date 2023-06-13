@@ -1,14 +1,15 @@
 :root {
     --background-color : rgb(22, 22, 26);
     --main-letter-color : white;
-    --secondary-letter-color : rgb(129, 123, 123);
+    --secondary-letter-color : rgb(130, 235, 126);
     --hover-color : #ffffffcb;
 }
 
 :root.dark {
-    --dark-background-color : rgb(233, 236, 238);
-    --dark-main-letter-color : black;
-    --dark-secondary-letter-color : lime;
+    --background-color : rgb(245, 245, 245);
+    --main-letter-color : black;
+    --secondary-letter-color : rgb(23, 117, 11);
+    --hover-color : #333232cb;
 }
 
 * {
@@ -56,7 +57,7 @@ header > nav {
     align-items: center;
     /* For the positioning */
 
-    padding-left: 7%;
+    padding-left: 15%;
 }
 
 header > nav > a {
@@ -73,17 +74,41 @@ header > nav > a:hover {
     text-shadow: 1px 1px 30px var(--hover-color);
 }
 
-header > .dark_mode_button {
+.dark_mode_button {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* For the positioning */
 
-    padding-right: 6%;
+    font-weight: bold;
+    min-width: 85px;
+    min-height: 30px;
+    width: 25%;
+    font-size: 17px;
+    color: var(--main-letter-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 150px;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+    padding: 7%;
+
+}
+
+.dark_mode_button:hover {
+    text-shadow: 2px 2px 30px var(--hover-color);
 }
 
 header > .dark_mode_button > button:hover {
     cursor: pointer;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-right: 5%;
 }
 
 /* ------------------------------- HEADER ------------------------------------- */
@@ -104,7 +129,7 @@ footer {
     justify-content: space-between;
 }
 
-footer > .info {
+footer > .info3 {
     width: 20%;
     padding-left: 7%;
 
@@ -127,9 +152,7 @@ footer > .email > .contact-form > input {
     background-color: transparent;
     cursor: pointer;
 
-    border: 2px;
-    border-color: var(--secondary-letter-color);
-    border-style: solid;
+    border-color: transparent;
     border-radius: 150px;
     box-shadow: 1px 1px 10px var(--secondary-letter-color);
     padding: 7%;
