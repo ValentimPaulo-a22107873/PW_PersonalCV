@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from .models import Tarefa
+
 # Create your views here.
 
 def index(request):
@@ -14,3 +16,7 @@ def about(request):
 
 def projects(request):
     return render(request, "projects.html")
+
+def blog(request):
+    context = {'tarefas': Tarefa.objects.all()}
+    return render(request, "blog.html", context)

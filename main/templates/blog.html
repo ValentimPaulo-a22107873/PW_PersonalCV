@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block body %}
+<div class="body">
+
+    <div class="test">
+        
+        <h1>Tarefas</h1>
+
+        {%for tarefa in tarefas %}
+            <p>{{tarefa.title}}</p>
+        {%endfor%}
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+    
+</div>
+{% endblock %}
