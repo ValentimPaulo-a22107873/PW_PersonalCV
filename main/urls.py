@@ -23,5 +23,6 @@ urlpatterns = [
     path('playground/', views.playground, name="playground"),
     path('about/', views.about, name="about"),
     path('projects/', views.projects, name="projects"),
-    path('blog/', views.blog, name="blog")
+    path('blog/', views.blog, name="blog"),
+    path('blog/delete/<int:post_id>', views.delete_post, name="delete"),
 ]

@@ -20,14 +20,62 @@
 {% block body %}
 <div class="body">
 
-    <div class="test">
+    <h1 class="blog">Blog</h1>
         
-        <h1>Tarefas</h1>
+      
+    <div class="new_post">
 
-        {%for tarefa in tarefas %}
-            <p>{{tarefa.title}}</p>
-        {%endfor%}
+        <div class="forms">
+            <h2>New Post</h2>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <div>
+                    <a href="{% url 'main:blog' %}"><input type="submit" value="Adicionar" class="btn-success"></a>
+                </div>
+                
+            </form>
+        </div>
+
     </div>
+
+    {% for post in posts %}
+    <div class="post_space">
+        
+        <div class="post">
+            
+            <div class="top">
+
+                <div class="author">
+                    <span id="begin">Author:</span>
+                    <span>{{post.author}}</span>
+                </div>
+
+                <div class="title">
+                    {{post.title}}
+                </div>
+
+                <div class="date">
+                    <span id="begin">Date:</span>
+                    <span>{{post.date}}</span>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+                <span id="begin">Description:</span>
+                <span>{{post.description}}</span>
+            </div>
+
+            
+            <a href="{% url 'main:delete' post.id %}" class="btn-delete">Delete Post</a>
+
+        </div>
+        
+    </div>
+    {%endfor%}
+   
 
     
 

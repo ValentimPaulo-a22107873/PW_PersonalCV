@@ -5,7 +5,145 @@
     z-index: 50;
 }
 
-.test {
-    padding-top: 8%;
-    padding-left: 2%;
+.blog {
+    padding-top: 9%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 55px;
+}
+
+.new_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 40%;
+    padding-right: 40%;
+    
+    padding-bottom: 5%;
+}
+
+.forms {
+    width: 350px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+  
+
+    border-radius: 20px;
+
+    border-color: transparent;
+    box-shadow: 1px 1px 10px var(--main-letter-color);
+}
+
+.forms > h2 {
+    color: var(--secondary-letter-color);
+    padding-left: 35%;
+}
+
+.forms > form > p {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.forms > form > div {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.forms > form > div > a {
+    text-decoration: none;
+}
+
+.btn-success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    color: var(--main-letter-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
+.btn-delete {
+    display: flex;
+    justify-content: right;
+    padding-right: 4%;
+    padding-top: 2%;
+
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--secondary-letter-color);
+    cursor: pointer;
+}
+
+
+.post_space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 25vh;
+
+    padding-bottom: 2%;
+}
+
+.post {
+    width: 1000px;
+    height: 200px;
+    
+
+    border-color: transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--main-letter-color);
+}
+
+.post > a {
+    text-decoration: none;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.bottom{
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 95px;
+}
+
+.title {
+    color: var(--secondary-letter-color);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.bottom > span {
+    overflow-wrap: break-word;
+}
+
+#begin {
+    color: var(--secondary-letter-color);
 }
