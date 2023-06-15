@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="body">
+
+    <div class="register">
+        <h1>Create Account</h1>
+    
+        <form action="{% url 'main:register_user' %}" method="POST">
+            {% csrf_token %}
+            <p>
+                <span>Username:</span> <br>
+                <input type="text" name="username" placeholder="username" class="box">
+            </p>
+
+            <p>
+                <span>Email:</span> <br>
+                <input type="text" name="email" placeholder="email" class="box">
+            </p>
+
+            <p>
+                <span>Password:</span> <br>
+                <input type="password" name="password" placeholder="password" class="box">
+            </p>
+            
+            <p class="button">
+                <input type="submit" value="Create" class="sign_up">
+            </p>
+            
+        </form>
+
+    </div>
+
+    
+
+</div>
+{% endblock %}

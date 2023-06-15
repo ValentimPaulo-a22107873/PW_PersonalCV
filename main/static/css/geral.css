@@ -57,7 +57,8 @@ header > nav {
     align-items: center;
     /* For the positioning */
 
-    padding-left: 15%;
+    padding-right: 3%;
+
 }
 
 header > nav > a {
@@ -95,6 +96,30 @@ header > nav > a:hover {
 
 }
 
+.login_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 85px;
+    height: 30px;
+    width: 25%;
+    background-color: transparent;
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 150px;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+    padding: 7%;
+}
+
+.login_button > a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--main-letter-color);
+}
+
 .dark_mode_button:hover {
     text-shadow: 2px 2px 30px var(--hover-color);
 }
@@ -103,12 +128,35 @@ header > .dark_mode_button > button:hover {
     cursor: pointer;
 }
 
-.button{
+.button_dark{
     display: flex;
     justify-content: center;
     align-items: center;
 
     padding-right: 5%;
+}
+
+.button_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 5%;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+
+    padding-left: 5%;
+}
+
+.user {
+    padding-left: 8%;
+    width: 185px;
+
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /* ------------------------------- HEADER ------------------------------------- */

@@ -24,6 +24,12 @@ urlpatterns = [
     path('about/', views.about, name="about"),
     path('projects/', views.projects, name="projects"),
     path('blog/', views.blog, name="blog"),
+    path('login/', views.login_view, name="login_view"),
+    path('logout/', views.logout_view, name="logout_view"),
+    path('register/', views.register, name="register"),
+    path('register_user', views.register_view, name='register_user'),
     path('blog/delete/<int:post_id>', views.delete_post, name="delete"),
     path('blog/like/<int:post_id>', views.like, name="like"),
+
+    path('admin/', views.admin, name="admin"),
 ]

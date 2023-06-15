@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="body">
+
+    <div class="login">
+        <h1>Welcome</h1>
+    
+        <form action="{% url 'main:login_view' %}" method="POST">
+            {% csrf_token %}
+            <p>
+                <span>Username:</span> <br>
+                <input type="text" name="username" placeholder="username" class="box">
+            </p>
+            
+            <p>
+                <span>Password:</span> <br>
+                <input type="password" name="password" placeholder="password" class="box">
+            </p>
+            
+            <p class="button">
+                <input type="submit" value="Login" class="sign_in">
+            </p>
+            
+        </form>
+
+
+        <div class="sign_up">
+            If you dont have an account, <a href="{% url 'main:register' %}">sign up</a> here.
+        </div>
+    </div>
+
+    
+
+</div>
+{% endblock %}

@@ -81,6 +81,24 @@
     box-shadow: 1px 1px 10px var(--secondary-letter-color);
 }
 
+.return{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    color: var(--main-letter-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--secondary-letter-color);
+}
+
 .btn-delete {
     display: flex;
     justify-content: right;
