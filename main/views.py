@@ -19,19 +19,28 @@ def about(request):
 def projects(request):
     return render(request, "projects.html")
 
+
 def blog(request):
 
     form = PostForm(request.POST or None)
     if form.is_valid():
         form.save()
 
-
     context = {'posts': sorted(Post.objects.all(), key=lambda post: post.date, reverse=True), 'form': form}
 
     return render(request, "blog.html", context)
 
-def delete_post(request, post_id):
 
+def delete_post(request, post_id):
     Post.objects.get(id=post_id).delete()
     
+    return HttpResponseRedirect(reverse('main:blog'))
+
+
+def like(request, post_id):
+    
+    likes = Post.objects.get(id=post_id).like
+    likes+=1
+    Post.objects.filter(id=post_id).update(like=likes)
+
     return HttpResponseRedirect(reverse('main:blog'))

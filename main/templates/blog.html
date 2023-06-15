@@ -7,6 +7,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<script src="{% static 'js/blog.js' %}"></script>
 {% endblock %}
 
 
@@ -40,42 +41,179 @@
 
     </div>
 
-    {% for post in posts %}
-    <div class="post_space">
-        
-        <div class="post">
+
+    <div class="division">
+        <span class="button_geral">Geral</span> 
+        <hr>
+    </div>
+    <div id="post_geral">
+        {% for post in posts %}
+        {% if post.type == 1%}
+
+        <div class="post_space">
+
+            <div class="post">
             
-            <div class="top">
-
-                <div class="author">
-                    <span id="begin">Author:</span>
-                    <span>{{post.author}}</span>
+                <div class="top">
+    
+                    <div class="author">
+                        <span id="begin">Author:</span>
+                        <span>{{post.author}}</span>
+                    </div>
+    
+                    <div class="title">
+                        {{post.title}}
+                    </div>
+    
+                    <div class="date">
+                        <span id="begin">Date:</span>
+                        <span>{{post.date}}</span>
+                    </div>
+    
                 </div>
-
-                <div class="title">
-                    {{post.title}}
+    
+                <div class="bottom">
+                    <span id="begin">Description:</span>
+                    <span>{{post.description}}</span>
                 </div>
+    
+                
+                <div class="extra">
+                    <div class="like">
+                        <a href="{% url 'main:like' post.id %}" class="heart">❤️</a>
+                        <span>{{post.like}}</span>
+                    </div>
 
-                <div class="date">
-                    <span id="begin">Date:</span>
-                    <span>{{post.date}}</span>
+                    <div class="delete">
+                        <a href="{% url 'main:delete' post.id %}" class="btn-delete">Delete Post</a>
+                    </div>
                 </div>
-
+                
+    
             </div>
-
-            <div class="bottom">
-                <span id="begin">Description:</span>
-                <span>{{post.description}}</span>
-            </div>
-
-            
-            <a href="{% url 'main:delete' post.id %}" class="btn-delete">Delete Post</a>
 
         </div>
         
+        
+        {%endif%}
+        {%endfor%}
     </div>
-    {%endfor%}
-   
+
+    
+
+    <div class="division">
+        <span class="button_sports">Sports</span> 
+        <hr>
+    </div>
+    <div id="post_sports">
+        {% for post in posts %}
+        {% if post.type == 2%}
+
+        <div class="post_space">
+
+            <div class="post">
+            
+                <div class="top">
+    
+                    <div class="author">
+                        <span id="begin">Author:</span>
+                        <span>{{post.author}}</span>
+                    </div>
+    
+                    <div class="title">
+                        {{post.title}}
+                    </div>
+    
+                    <div class="date">
+                        <span id="begin">Date:</span>
+                        <span>{{post.date}}</span>
+                    </div>
+    
+                </div>
+    
+                <div class="bottom">
+                    <span id="begin">Description:</span>
+                    <span>{{post.description}}</span>
+                </div>
+    
+                
+                <div class="extra">
+                    <div class="like">
+                        <a href="{% url 'main:like' post.id %}" class="heart">❤️</a>
+                        <span>{{post.like}}</span>
+                    </div>
+
+                    <div class="delete">
+                        <a href="{% url 'main:delete' post.id %}" class="btn-delete">Delete Post</a>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+        
+        
+        {%endif%}
+        {%endfor%}
+    </div>
+
+
+
+    <div class="division">
+        <span class="button_music">Music</span> 
+        <hr>
+    </div>
+    <div id="post_music">
+        {% for post in posts %}
+        {% if post.type == 3%}
+
+        <div class="post_space">
+
+            <div class="post">
+            
+                <div class="top">
+    
+                    <div class="author">
+                        <span id="begin">Author:</span>
+                        <span>{{post.author}}</span>
+                    </div>
+    
+                    <div class="title">
+                        {{post.title}}
+                    </div>
+    
+                    <div class="date">
+                        <span id="begin">Date:</span>
+                        <span>{{post.date}}</span>
+                    </div>
+    
+                </div>
+    
+                <div class="bottom">
+                    <span id="begin">Description:</span>
+                    <span>{{post.description}}</span>
+                </div>
+    
+                
+                <div class="extra">
+                    <div class="like">
+                        <a href="{% url 'main:like' post.id %}" class="heart">❤️</a>
+                        <span>{{post.like}}</span>
+                    </div>
+
+                    <div class="delete">
+                        <a href="{% url 'main:delete' post.id %}" class="btn-delete">Delete Post</a>
+                    </div>
+                </div>
+    
+            </div>
+
+        </div>
+        
+        
+        {%endif%}
+        {%endfor%}
+    </div>
 
     
 

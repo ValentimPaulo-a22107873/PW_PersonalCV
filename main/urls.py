@@ -25,4 +25,5 @@ urlpatterns = [
     path('projects/', views.projects, name="projects"),
     path('blog/', views.blog, name="blog"),
     path('blog/delete/<int:post_id>', views.delete_post, name="delete"),
+    path('blog/like/<int:post_id>', views.like, name="like"),
 ]

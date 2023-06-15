@@ -23,13 +23,13 @@
 
     padding-left: 40%;
     padding-right: 40%;
-    
+
     padding-bottom: 5%;
 }
 
 .forms {
     width: 350px;
-    height: 460px;
+    height: 510px;
     display: flex;
     flex-direction: column;
   
@@ -114,10 +114,6 @@
     box-shadow: 1px 1px 10px var(--main-letter-color);
 }
 
-.post > a {
-    text-decoration: none;
-}
-
 .top{
     display: flex;
     justify-content: space-between;
@@ -146,4 +142,61 @@
 
 #begin {
     color: var(--secondary-letter-color);
+}
+
+.division {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    padding-bottom: 5%;
+}
+
+.division > span {
+    font-weight: bold;
+    font-size: 20px;
+
+    color: var(--secondary-letter-color);
+}
+
+.division > span:hover {
+   cursor: pointer;
+}
+
+#post_sports{
+    display: flex;
+    flex-direction: column;
+}
+
+#post_geral{
+    display: flex;
+    flex-direction: column;
+}
+
+#post_music{
+    display: flex;
+    flex-direction: column;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.delete{
+    width: 100px;
+}
+
+.btn-delete {
+    text-decoration: none;
+}
+
+.heart{
+    text-decoration: none;
+}
+
+.heart:hover {
+    cursor: pointer;
 }
