@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/web.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="body">
+
+    <div>
+        <p>Link para o video de youtube <iframe src="https://youtu.be/bBHLxa7g9yw" frameborder="0"></iframe>
+        <p>Link caso não funcione o <a href="https://youtu.be/bBHLxa7g9yw">video</a></p>
+        <p>Link para labs anteriores <a href="https://github.com/ValentimPaulo-a22107873/PW_Labs">Labs</a></p>
+        <p>O website foi feito utilizando Django, Python, CSS, Html e JavaScript</p>
+    </div>
+
+</div>
+{% endblock %}

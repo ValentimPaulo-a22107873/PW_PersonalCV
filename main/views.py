@@ -29,6 +29,9 @@ def register(request):
 def admin(request):
     return render(request, "admin")
 
+def web(request):
+    return render(request, "web.html")
+
 
 
 def blog(request):
